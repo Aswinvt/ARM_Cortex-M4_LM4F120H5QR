@@ -89,7 +89,7 @@
         <Stop>1</Stop>
     </MemConfig>
     <Aliases>
-        <A0>_ "E:\My Wisdom\Works\Github\Modern_embedded_systems\Lesson-2\main.c" "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LPC1768\Lesson-2\main.c"</A0>
+        <A0>_ "E:\My Wisdom\Works\Github\Modern_embedded_systems\Lesson-2\main.c" "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-2\main.c"</A0>
         <Count>1</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>

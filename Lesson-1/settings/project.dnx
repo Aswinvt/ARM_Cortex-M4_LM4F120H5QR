@@ -89,7 +89,8 @@
         <Stop>1</Stop>
     </MemConfig>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LPC1768\Lesson-1\main.c" "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-1\main.c"</A0>
+        <Count>1</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <Simulator>
