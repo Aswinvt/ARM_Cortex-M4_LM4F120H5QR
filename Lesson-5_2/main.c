@@ -13,7 +13,7 @@ int main() {
   }
   
   GPIO_PORTF_DATA_R = 0x00U; //Configure GPIO F bit-1 to low
-  
+  counter = 0;
   while (counter < 1000000) {
     ++counter;
   }

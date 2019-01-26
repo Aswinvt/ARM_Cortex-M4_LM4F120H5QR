@@ -9,6 +9,7 @@ int main() {
     ++counter;
   }
   *((unsigned int *)0x400253FCU) = 0x00U; //Configure GPIO F bit-1 to low
+  counter = 0;
   while (counter < 1000000) {
     ++counter;
   }

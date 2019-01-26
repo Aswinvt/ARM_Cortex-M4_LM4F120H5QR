@@ -19,7 +19,7 @@ int main() {
   }
   
   GPIO_PORTF_DATA_R &= ~LED_RED;
-  
+  counter = 0;
   while (counter < 1000000) {
     ++counter;
   }
