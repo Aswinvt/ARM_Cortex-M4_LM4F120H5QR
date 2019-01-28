@@ -1,0 +1,208 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                28/Jan/2019  22:52:55
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Exe\project.out
+#    Map file     =  
+#        E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\List\project.map
+#    Command line =  
+#        -f C:\Users\ASWIN\AppData\Local\Temp\EW615E.tmp ("E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Obj\delay.o"
+#        "E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Obj\main.o"
+#        -o "E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Exe\project.out"
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map "E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\List\project.map"
+#        --config "E:\My
+#        Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\project.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 0M, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20007fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address   Size  Object
+  -------            ----        -------   ----  ------
+"A0":                                      0x40
+  .intvec            ro code  0x00000000   0x40  vector_table_M.o [5]
+                            - 0x00000040   0x40
+
+"P1":                                     0x1df
+  .text              ro code  0x00000040   0xc8  main.o [1]
+  .text              ro code  0x00000108   0x20  delay.o [1]
+  .text              ro code  0x00000128   0x38  packbits_init_single.o [5]
+  .text              ro code  0x00000160   0x28  data_init.o [5]
+  .text              ro code  0x00000188   0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x000001ac   0x10  - Linker created -
+  .text              ro code  0x000001bc    0x2  vector_table_M.o [5]
+  .text              ro code  0x000001c0   0x1e  cmain.o [5]
+  .text              ro code  0x000001de    0x4  low_level_init.o [3]
+  .text              ro code  0x000001e2    0x4  exit.o [3]
+  .text              ro code  0x000001e8    0xa  cexit.o [5]
+  .text              ro code  0x000001f4   0x14  exit.o [6]
+  .text              ro code  0x00000208    0xc  cstartup_M.o [5]
+  .rodata            const    0x00000214    0x0  packbits_init_single.o [5]
+  Initializer bytes  const    0x00000214    0xb  <for P2-1>
+                            - 0x0000021f  0x1df
+
+"P2", part 1 of 2:                         0x24
+  P2-1                        0x20000000   0x24  <Init block>
+    .data            inited   0x20000000    0x8  main.o [1]
+    .bss             inited   0x20000008    0x4  main.o [1]
+    .bss             inited   0x2000000c    0x4  main.o [1]
+    .bss             inited   0x20000010    0x8  main.o [1]
+    .bss             inited   0x20000018    0xc  main.o [1]
+                            - 0x20000024   0x24
+
+"P2", part 2 of 2:                        0x400
+  CSTACK                      0x20000028  0x400  <Block>
+    CSTACK           uninit   0x20000028  0x400  <Block tail>
+                            - 0x20000428  0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0xb (30% of destination):
+          0x00000214   0xb
+    1 destination range, total size 0x24:
+          0x20000000  0x24
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Obj: [1]
+    delay.o                      32
+    main.o                      200       11       36
+    -------------------------------------------------
+    Total:                      232       11       36
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                        8
+
+m7M_tls.a: [4]
+    fpinit_M.o                   34
+    -------------------------------------------------
+    Total:                       34
+
+rt7M_tl.a: [5]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    packbits_init_single.o       56
+    vector_table_M.o             66
+    -------------------------------------------------
+    Total:                      214
+
+shb_l.a: [6]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                          6        2
+    Linker created                        16    1 024
+-----------------------------------------------------
+    Grand Total:                514       29    1 060
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address  Size  Type      Object
+-----                      -------  ----  ----      ------
+.iar.init_table$$Base   0x000001ac         --   Gb  - Linker created -
+.iar.init_table$$Limit  0x000001bc         --   Gb  - Linker created -
+?main                   0x000001c1        Code  Gb  cmain.o [5]
+CSTACK$$Base            0x20000028         --   Gb  - Linker created -
+CSTACK$$Limit           0x20000428         --   Gb  - Linker created -
+Region$$Table$$Base     0x000001ac         --   Gb  - Linker created -
+Region$$Table$$Limit    0x000001bc         --   Gb  - Linker created -
+__cmain                 0x000001c1        Code  Gb  cmain.o [5]
+__exit                  0x000001f5  0x14  Code  Gb  exit.o [6]
+__iar_data_init3        0x00000161  0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x00000189        Code  Gb  fpinit_M.o [4]
+__iar_packbits_init_single3
+                        0x00000129  0x38  Code  Gb  packbits_init_single.o [5]
+__iar_program_start     0x00000209        Code  Gb  cstartup_M.o [5]
+__iar_systems$$module {Abs}
+                        0x00000001        Data  Gb  command line/config [2]
+__low_level_init        0x000001df   0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x00000000        Data  Gb  vector_table_M.o [5]
+_call_main              0x000001cd        Code  Gb  cmain.o [5]
+_exit                   0x000001e9        Code  Gb  cexit.o [5]
+_main                   0x000001db        Code  Gb  cmain.o [5]
+delay                   0x00000109  0x20  Code  Gb  delay.o [1]
+exit                    0x000001e3   0x4  Code  Gb  exit.o [3]
+main                    0x00000041  0xc8  Code  Gb  main.o [1]
+p1                      0x20000008   0x4  Data  Gb  main.o [1]
+p2                      0x2000000c   0x4  Data  Gb  main.o [1]
+t                       0x20000018   0xc  Data  Gb  main.o [1]
+w                       0x20000000   0x8  Data  Gb  main.o [1]
+w2                      0x20000010   0x8  Data  Gb  main.o [1]
+
+
+[1] = E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-13\Debug\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = m7M_tls.a
+[5] = rt7M_tl.a
+[6] = shb_l.a
+
+    514 bytes of readonly  code memory
+     29 bytes of readonly  data memory
+  1 060 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
