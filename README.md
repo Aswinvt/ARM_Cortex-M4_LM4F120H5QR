@@ -28,8 +28,7 @@
 
 -Lesson 10_1: Stack Overflow and Other Pitfalls of Functions
 
--Lesson 11: <stdint.h-, Endianness, Mixing Types in Expressions
-
+-Lesson 11: <stdint.h>, Endianness, Mixing Types in Expressions
 
 -Lesson 12: Structures and CMSIS
 
@@ -47,7 +46,7 @@
 
 -Lesson 19: GNU-ARM and Eclipse
 
--(--Lesson 20: Race Conditions
+-(->Lesson 20: Race Conditions<-)
 
 -Lesson 20: Foreground Background Systems
 
