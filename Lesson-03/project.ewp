@@ -78,7 +78,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>LM4F120H5QR	TexasInstruments LM4F120H5QR</state>
+                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -138,7 +138,7 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>LM4F120H5QR	TexasInstruments LM4F120H5QR</state>
+                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
                 </option>
                 <option>
                     <name>FPU2</name>
@@ -759,7 +759,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state></state>
+                    <state>$TOOLKIT_DIR$\config\linker\TexasInstruments\LM4F120H5QR.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -819,7 +819,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>
