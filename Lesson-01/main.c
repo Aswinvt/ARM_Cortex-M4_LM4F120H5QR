@@ -1,7 +1,9 @@
 int main() {
-  int counter = 0;
+  unsigned int counter = 0;
   while(counter < 21) {
     ++counter;
   }
+  ++counter;
+  ++counter;
   return 0;
 }
