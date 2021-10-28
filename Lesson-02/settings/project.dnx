@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>162239938</Checksum>
+        <Checksum>2114342300</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
@@ -98,8 +98,9 @@
         <Count>0</Count>
     </Breakpoints>
     <Aliases>
-        <A0>_ "E:\My Wisdom\Works\Github\Modern_embedded_systems\Lesson-2\main.c" "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-2\main.c"</A0>
-        <Count>1</Count>
+        <A0>_ "D:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-02\main.c" ""</A0>
+        <A1>_ "E:\My Wisdom\Works\Github\Modern_embedded_systems\Lesson-2\main.c" "E:\My Wisdom\Works\Github\ARM_Cortex-M4_LM4F120H5QR\Lesson-2\main.c"</A1>
+        <Count>2</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
 </settings>
