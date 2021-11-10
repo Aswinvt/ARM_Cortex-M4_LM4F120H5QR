@@ -1045,7 +1045,7 @@
                 <expressions>
                     <item>counter</item>
                     <item>PC</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
